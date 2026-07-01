@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Greenfield School</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true">
+                        <rect width="24" height="24" rx="4" fill="#2b7a78"></rect>
+                        <path d="M6 14l6-4 6 4" stroke="#fff" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 18h12" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="school-name">Greenfield School</div>
+                </div>
+                <nav class="main-nav">
+                    <a href="#about">About</a>
+                    <a href="#programs">Programs</a>
+                    <a href="#staff">Staff</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h1>Welcome to Greenfield School</h1>
+                    <p class="lead">A safe, inclusive place where every student can learn, grow, and succeed.</p>
+                    <p><a class="btn" href="#contact">Enroll / Contact Us</a></p>
+                </div>
+            </section>
+
+            <section id="about" class="container about">
+                <h2>About Us</h2>
+                <p>Greenfield School provides a balanced education focused on academic excellence, creativity, and character development. We serve students from kindergarten through grade 12.</p>
+            </section>
+
+            <section id="programs" class="container cards">
+                <h2>Programs</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>STEM</h3>
+                        <p>Hands-on science, technology, engineering and math learning.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Arts</h3>
+                        <p>Visual and performing arts to inspire creativity.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Sports</h3>
+                        <p>Team and individual athletics for physical development.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="staff" class="container staff">
+                <h2>Our Staff</h2>
+                <p>Dedicated teachers and support staff committed to student success.</p>
+            </section>
+
+            <section id="contact" class="container contact">
+                <h2>Contact</h2>
+                <p>Email: info@greenfield.example | Phone: (555) 123-4567</p>
+                <p>Address: 123 Learning Lane, Hometown</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">© <span id="year"></span> Greenfield School</div>
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </body>
 </html>
