@@ -7,14 +7,14 @@ body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neu
 .site-header { background: #ffffff; border-bottom: 1px solid #e6f0ef; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; }
 .logo { display: flex; align-items: center; gap: 0.6rem; }
-.school-name { font-weight: 700; color: #0b5e5c; }
-.main-nav a { color: #0b5e5c; text-decoration: none; margin-left: 1rem; font-weight: 600; }
+.shop-name { font-weight: 800; color: #7a2f4a; font-size: 1.05rem; }
+.main-nav a { color: #7a2f4a; text-decoration: none; margin-left: 1rem; font-weight: 600; }
 
 /* Hero */
-.hero { background: linear-gradient(180deg, #e6faf8 0%, #f7fdfd 100%); padding: 2.5rem 0; text-align: center; }
-.hero h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #094e4c; }
-.lead { color: #145a58; margin-bottom: 1rem; }
-.btn { display: inline-block; background: #2b7a78; color: #fff; padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 700; }
+.hero { background: linear-gradient(180deg, #fff6fb 0%, #f7f2f6 100%); padding: 2.5rem 0; text-align: center; }
+.hero h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #4a2030; }
+.lead { color: #6b3b4b; margin-bottom: 1rem; }
+.btn { display: inline-block; background: #b24a6b; color: #fff; padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 700; }
 
 /* Sections */
 h2 { color: #094e4c; margin-bottom: 0.5rem; }
@@ -25,12 +25,21 @@ h2 { color: #094e4c; margin-bottom: 0.5rem; }
 .card { background: #fff; border: 1px solid #e6f0ef; padding: 1rem; border-radius: 8px; }
 .card h3 { margin-bottom: 0.4rem; color: #0b5e5c; }
 
+/* Products */
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.75rem; }
+.product { background: #fff; border: 1px solid #efe6ea; padding: 0.75rem; border-radius: 8px; text-align: center; }
+.product img { width: 100%; height: auto; border-radius: 6px; object-fit: cover; }
+.product h3 { margin: 0.5rem 0 0.25rem; font-size: 1.05rem; color: #4a2030; }
+.price { color: #7a2f4a; font-weight: 700; margin-bottom: 0.5rem; }
+.add-cart { background: #7a2f4a; color: #fff; border: none; padding: 0.5rem 0.8rem; border-radius: 6px; cursor: pointer; font-weight: 700; }
+
 /* Footer */
 .site-footer { border-top: 1px solid #e6f0ef; padding: 0.75rem 0; text-align: center; color: #577c7a; }
 
 /* Responsive */
+
 @media (max-width: 800px) {
-	.card-grid { grid-template-columns: 1fr; }
+	.card-grid, .product-grid { grid-template-columns: 1fr; }
 	.main-nav { display: none; }
 	.hero h1 { font-size: 1.5rem; }
 }
