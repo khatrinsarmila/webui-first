@@ -91,3 +91,38 @@
         </script>
     </body>
 </html>
+/* Baby Pink Light Theme */
+:root {
+  --background-color: #ffe5ec; /* Soft baby pink */
+  --text-color: #4a2834;       /* Deep berry for high contrast readability */
+  --button-bg: #ff8fab;        /* Vibrant pink for the button */
+  --button-text: #ffffff;      /* White text for the button */
+}
+
+/* Deep Plum/Pink Dark Theme */
+body.dark-theme {
+  --background-color: #251118; /* Deep dark plum */
+  --text-color: #ffeef2;       /* Very light pink/white for text */
+  --button-bg: #fb6f92;        /* Bright neon baby pink */
+  --button-text: #251118;      /* Dark text on the bright button */
+}
+
+/* Apply the variables to your elements */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Makes the swap smooth */
+  padding: 40px;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
