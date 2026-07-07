@@ -11,8 +11,11 @@ body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neu
 .main-nav a { color: #7a2f4a; text-decoration: none; margin-left: 1rem; font-weight: 600; }
 
 /* Hero */
-.hero { background: linear-gradient(180deg, #fff6fb 0%, #f7f2f6 100%); padding: 2.5rem 0; text-align: center; }
+.hero { background: linear-gradient(180deg, #fff6fb 0%, #f7f2f6 100%); padding: 2.5rem 0; }
+.hero-inner { display: grid; gap: 1.5rem; align-items: center; }
+.hero-copy { text-align: left; }
 .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #4a2030; }
+.hero-image { width: 100%; max-width: 520px; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
 .lead { color: #6b3b4b; margin-bottom: 1rem; }
 .btn { display: inline-block; background: #b24a6b; color: #fff; padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 700; }
 

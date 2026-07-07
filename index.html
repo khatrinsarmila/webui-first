@@ -27,10 +27,13 @@
 
         <main>
             <section class="hero">
-                <div class="container">
-                    <h1>Style for every generation</h1>
-                    <p class="lead">Fashion for men, women, kids, and beautiful Nepali dresses with comfort, color, and confidence.</p>
-                    <p><a class="btn" href="#shop">Shop New Arrivals</a></p>
+                <div class="container hero-inner">
+                    <div class="hero-copy">
+                        <h1>Style for every generation</h1>
+                        <p class="lead">Fashion for men, women, kids, and beautiful Nepali dresses with comfort, color, and confidence.</p>
+                        <p><a class="btn" href="#shop">Shop New Arrivals</a></p>
+                    </div>
+                    <img src="lyrics-homepage.png" alt="Lyric store overview" class="hero-image">
                 </div>
             </section>
 
@@ -77,7 +80,7 @@
 
             <section id="contact" class="container contact">
                 <h2>Contact</h2>
-                <p>Email: hello@lyric.example | Phone: (555) 987-6543</p>
+                <p>Email: hello@lyric.example | Gmail: lyric.fashion@gmail.com | Phone: (555) 987-6543</p>
                 <p>Address: 45 Market Street</p>
             </section>
         </main>
@@ -90,41 +93,4 @@
             document.getElementById('year').textContent = new Date().getFullYear();
         </script>
     </body>
-</html>
-<style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        body{
-            background:#fff5f8;
-            font-family:Arial, sans-serif;
-        }
-
-        .container{
-            width:100%;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:20px;
-        }
-
-        .homepage{
-            width:100%;
-            max-width:1400px;
-            border-radius:15px;
-            box-shadow:0 10px 30px rgba(0,0,0,.15);
-        }
-    </style>
-
-</head>
-<body>
-
-<div class="container">
-    <img src="lyrics-homepage.png" alt="Lyrics Fashion Store" class="homepage">
-</div>
-
-</body>
 </html>
